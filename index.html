@@ -3,71 +3,158 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Taqaza Support</title>
-  <meta name="description" content="Help and contact for Taqaza, the invoice and payment tracker for printing businesses.">
+  <title>Taqaza</title>
+  <meta name="description" content="Taqaza is an invoice and payment tracker for printing presses and businesses that bill other businesses. It splits lump-sum client payments across invoices and shows what is still due.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Taqaza: invoices and payments for printing businesses">
+  <meta property="og:description" content="Clients pay in lump sums? Taqaza splits each payment across their invoices and shows exactly what is still due. Works offline; your data stays on your phone.">
+  <meta property="og:url" content="https://annusshah1998.github.io/taqaza-site/">
+  <meta property="og:image" content="https://annusshah1998.github.io/taqaza-site/og-image.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="band">
     <div class="inner">
-      <a class="brand" href="./" aria-label="Taqaza support home">
-        <svg viewBox="240 120 620 740" aria-hidden="true">
-          <path d="M292,236 Q292,200 328,200 H696 Q732,200 732,236 V780 L704.5,820 L677,780 L649.5,820 L622,780 L594.5,820 L567,780 L539.5,820 L512,780 L484.5,820 L457,780 L429.5,820 L402,780 L374.5,820 L347,780 L319.5,820 L292,780 Z" fill="#ffffff"/>
-          <rect x="382" y="300" width="260" height="76" rx="14" fill="#0b6f8c"/>
-          <rect x="474" y="300" width="76" height="340" rx="14" fill="#0b6f8c"/>
-          <circle cx="732" cy="228" r="78" fill="#d6267a" stroke="#0b6f8c" stroke-width="26"/>
-        </svg>
-        <span>Taqaza</span>
-      </a>
-      <h1>Help and support</h1>
-      <p>Taqaza tracks invoices and the lump-sum payments business clients send against them. It keeps everything on your phone.</p>
+      <div class="topbar">
+        <a class="brand" href="./" aria-label="Taqaza home">
+          <svg viewBox="240 120 620 740" aria-hidden="true">
+            <path d="M292,236 Q292,200 328,200 H696 Q732,200 732,236 V780 L704.5,820 L677,780 L649.5,820 L622,780 L594.5,820 L567,780 L539.5,820 L512,780 L484.5,820 L457,780 L429.5,820 L402,780 L374.5,820 L347,780 L319.5,820 L292,780 Z" fill="#ffffff"/>
+            <rect x="382" y="300" width="260" height="76" rx="14" fill="#0b6f8c"/>
+            <rect x="474" y="300" width="76" height="340" rx="14" fill="#0b6f8c"/>
+            <circle cx="732" cy="228" r="78" fill="#d6267a" stroke="#0b6f8c" stroke-width="26"/>
+          </svg>
+          <span>Taqaza</span>
+        </a>
+        <nav class="nav" aria-label="Page sections">
+          <a href="#screens">Screens</a>
+          <a href="#features">Features</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <div>
+          <h1>Know what every client owes you, invoice by invoice</h1>
+          <p>Taqaza is the invoice and payment tracker for printing presses and other businesses that bill businesses. Clients pay in lump sums; Taqaza splits each payment across their invoices and shows exactly what is still due.</p>
+          <ul class="facts">
+            <li>Android and iPhone</li>
+            <li>Works offline</li>
+            <li>No sign-up</li>
+            <li>Lakh and crore</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#support">Contact us</a>
+            <span class="soon">Coming soon to Google Play and the App Store.</span>
+          </div>
+        </div>
+        <img src="screens/2-record-payment.png" width="540" height="960"
+          alt="Taqaza recording a Rs 3,00,000 payment: two invoices paid in full and Rs 42,500 applied to a third.">
+      </div>
     </div>
   </header>
 
   <main>
-    <section aria-labelledby="contact">
-      <h2 id="contact">Contact us</h2>
-      <p>Email us with your question. Mention your phone model and, if something went wrong, what you were doing at the time.</p>
-      <p class="contact"><a href="mailto:annusshah19@gmail.com">annusshah19@gmail.com</a></p>
+    <section class="block inner narrow" aria-labelledby="problem">
+      <h2 id="problem">One payment, three invoices: which are paid?</h2>
+      <p class="lead">You bill a client three times. They send one amount that matches none of the invoices. Taqaza applies it oldest first, or exactly the way you choose.</p>
+      <div class="card">
+        <p><b>Rs 3,50,000 received</b> against invoices of Rs 2,00,000, Rs 50,000 and Rs 10,00,000:</p>
+        <div class="example">
+          <div><b>INV-1001 · Rs 2,00,000</b><span class="paid">Paid in full</span></div>
+          <div><b>INV-1002 · Rs 50,000</b><span class="paid">Paid in full</span></div>
+          <div><b>INV-1003 · Rs 10,00,000</b><span class="due">Rs 1,00,000 paid, Rs 9,00,000 still due</span></div>
+        </div>
+      </div>
     </section>
 
-    <section aria-labelledby="faq">
-      <h2 id="faq">Common questions</h2>
-      <details open>
-        <summary>A client paid for several invoices at once. How do I record it?</summary>
-        <p>Open the client and tap <strong>Record payment</strong>. Enter the amount received and Taqaza splits it across their open invoices, oldest first. Switch to <strong>Manual</strong> to choose the amount for each invoice yourself. Anything left over is kept as the client's credit.</p>
-      </details>
-      <details>
-        <summary>The client deducted income tax before paying.</summary>
-        <p>Enter the cash in <strong>Amount received</strong> and the deduction in <strong>Tax withheld by client</strong>. Both count toward the invoices.</p>
-      </details>
-      <details>
-        <summary>A cheque bounced.</summary>
-        <p>Open the payment and tap <strong>Reverse payment</strong>. The invoices it paid become due again, and the payment stays on the statement, struck through.</p>
-      </details>
-      <details>
-        <summary>A job was misprinted or returned.</summary>
-        <p>Open the invoice and tap <strong>Issue credit note</strong>. It reduces what the client owes and can be shared as a PDF. If the invoice was already paid, the amount becomes the client's credit.</p>
-      </details>
-      <details>
-        <summary>How do I move my records to a new phone?</summary>
-        <p>On the old phone, go to <strong>Settings → Save a copy to phone storage</strong> and send that file to the new phone (for example by WhatsApp or email). On the new phone, install Taqaza and use <strong>Settings → Restore from a backup file</strong>.</p>
-      </details>
-      <details>
-        <summary>Are my records uploaded anywhere?</summary>
-        <p>No. Taqaza has no account and no server; your records stay on your phone. See the <a href="privacy.html">privacy policy</a>.</p>
-      </details>
-      <details>
-        <summary>The app lock does not recognise my fingerprint.</summary>
-        <p>Choose the option to use your phone's PIN, pattern or passcode in the unlock prompt. You can turn the lock off in <strong>Settings → Security</strong>.</p>
-      </details>
+    <section class="block inner" id="screens" aria-labelledby="screens-title">
+      <h2 id="screens-title">See Taqaza</h2>
+      <p class="lead">Screens from the app, with sample data.</p>
+      <ul class="screens">
+        <li><img src="screens/1-home.png" width="540" height="960" loading="lazy" alt="Home: Rs 18,57,500 outstanding, split by how late it is, and the clients who owe the most."></li>
+        <li><img src="screens/2-record-payment.png" width="540" height="960" loading="lazy" alt="Record payment: one payment split across three open invoices, oldest first."></li>
+        <li><img src="screens/3-client.png" width="540" height="960" loading="lazy" alt="Client page: balance due, a part-paid invoice, payments and paid invoices."></li>
+        <li><img src="screens/4-statement.png" width="540" height="960" loading="lazy" alt="Client statement with a running balance and buttons to share it as PDF or WhatsApp text."></li>
+        <li><img src="screens/5-invoice.png" width="540" height="960" loading="lazy" alt="Invoice with a partial payment and a credit note for a misprint."></li>
+        <li><img src="screens/6-clients.png" width="540" height="960" loading="lazy" alt="Client list with amounts due and overdue flags."></li>
+      </ul>
+    </section>
+
+    <section class="block inner" id="features" aria-labelledby="features-title">
+      <h2 id="features-title">Everything a receivables register needs</h2>
+      <p class="lead">Built around how business clients in Pakistan actually pay.</p>
+      <div class="features">
+        <div class="card"><h3>Split lump-sum payments</h3><p>Record a payment once. Taqaza spreads it over open invoices oldest first, or you set each amount. Leftover money stays as client credit.</p></div>
+        <div class="card"><h3>Invoices as PDF</h3><p>Line items, sales tax, payment terms, your logo, NTN, STRN, bank details and signature. Share on WhatsApp or email.</p></div>
+        <div class="card"><h3>Tax withheld and adjustments</h3><p>Record income tax the client deducted, issue credit notes for reprints, write off small balances, and reverse bounced cheques.</p></div>
+        <div class="card"><h3>Statements in one tap</h3><p>Every invoice, payment and adjustment with a running balance, ready as a PDF or as text for WhatsApp.</p></div>
+        <div class="card"><h3>See who is late</h3><p>Outstanding split into not yet due, 1–30, 31–60 and over 60 days late, with the clients who owe the most at the top.</p></div>
+        <div class="card"><h3>Made for rupees</h3><p>Amounts in lakh and crore, written out in words, so a missing zero is easy to spot.</p></div>
+      </div>
+    </section>
+
+    <section class="block inner narrow" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Your records stay on your phone</h2>
+      <div class="card">
+        <ul>
+          <li>No account, no sign-up and no internet needed.</li>
+          <li>Nothing is sent to us or anyone else; we cannot see your data.</li>
+          <li>A backup is saved on the phone every day, and you can keep a copy in phone storage and restore it on a new phone.</li>
+          <li>Optional app lock with fingerprint, face or your phone PIN.</li>
+        </ul>
+        <p>Read the <a href="privacy.html">privacy policy</a>.</p>
+      </div>
+    </section>
+
+    <section class="block inner narrow" id="support" aria-labelledby="support-title">
+      <h2 id="support-title">Help and support</h2>
+      <div class="card">
+        <h3>Contact us</h3>
+        <p>Email us with your question. Mention your phone model and, if something went wrong, what you were doing at the time.</p>
+        <p class="contact"><a href="mailto:annusshah19@gmail.com">annusshah19@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>Common questions</h3>
+        <details>
+          <summary>A client paid for several invoices at once. How do I record it?</summary>
+          <p>Open the client and tap <strong>Record payment</strong>. Enter the amount received and Taqaza splits it across their open invoices, oldest first. Switch to <strong>Manual</strong> to choose the amount for each invoice yourself. Anything left over is kept as the client's credit.</p>
+        </details>
+        <details>
+          <summary>The client deducted income tax before paying.</summary>
+          <p>Enter the cash in <strong>Amount received</strong> and the deduction in <strong>Tax withheld by client</strong>. Both count toward the invoices.</p>
+        </details>
+        <details>
+          <summary>A cheque bounced.</summary>
+          <p>Open the payment and tap <strong>Reverse payment</strong>. The invoices it paid become due again, and the payment stays on the statement, struck through.</p>
+        </details>
+        <details>
+          <summary>A job was misprinted or returned.</summary>
+          <p>Open the invoice and tap <strong>Issue credit note</strong>. It reduces what the client owes and can be shared as a PDF. If the invoice was already paid, the amount becomes the client's credit.</p>
+        </details>
+        <details>
+          <summary>How do I move my records to a new phone?</summary>
+          <p>On the old phone, go to <strong>Settings → Save a copy to phone storage</strong> and send that file to the new phone (for example by WhatsApp or email). On the new phone, install Taqaza and use <strong>Settings → Restore from a backup file</strong>.</p>
+        </details>
+        <details>
+          <summary>Are my records uploaded anywhere?</summary>
+          <p>No. Taqaza has no account and no server; your records stay on your phone. See the <a href="privacy.html">privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>The app lock does not recognise my fingerprint.</summary>
+          <p>Choose the option to use your phone's PIN, pattern or passcode in the unlock prompt. You can turn the lock off in <strong>Settings → Security</strong>.</p>
+        </details>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="inner">
       <a href="privacy.html">Privacy policy</a>
+      <a href="#support">Support</a>
       <span>© 2026 Taqaza</span>
     </div>
   </footer>
